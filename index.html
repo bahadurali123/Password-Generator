@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Password generator-Done</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="password">
+        <h1 id="heading">Password Generator</h1>
+        <div class="stasifications">
+            <label class="lables" for="password-length">password-length</label>
+            <input class="input-ps-lenght" type="number" value="8" name="password-length" min="8" max="100"
+                id="password-length">
+        </div>
+        <div class="stasifications">
+            <label class="lables" for="uppercasse">uppercasse</label>
+            <input class="inputs" type="radio" name="uppercasse" id="uppercasse-latter">
+        </div>
+        <div class="stasifications">
+            <label class="lables" for="lowercasse">lowercasse</label>
+            <input class="inputs" type="radio" name="lowercasse" id="lowercasse-latter">
+        </div>
+        <div class="stasifications">
+            <label class="lables" for="number">number</label>
+            <input class="inputs" type="radio" name="number" id="number">
+        </div>
+        <div class="stasifications">
+            <label class="lables" for="specialcasse">specialcasse</label>
+            <input class="inputs" type="radio" name="specialcasse" id="special-chactor">
+        </div>
+        <div id="btn-section">
+            <button id="generate-btn" onclick="generate()" type="submit">Generate</button>
+            <button id="copy-btn" type="submit" onclick="clip()"><i class="bi bi-clipboard">&nbsp;Copy</i></button>
+        </div>
+        <div id="output">
+            <!-- <p id="finalpassword">Password is this: </p> -->
+            <textarea name="" id="finalpassword"></textarea>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
